@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Meal Plan Delivery </title>
+   
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <i class="fa-solid fa-utensils"></i>
+            <h1>Meal Plan</h1>
+            <p>My Cart</p> 
+        </nav>
+    </header> -->
+    <main>
+        <section class="header">
+            <i class="fa-solid fa-utensils"></i>
+            <h1>Meal Plan</h1>
+            <p>My Cart</p>
+        </section>
+        <section id="breakfast">
+
+            <section class="breakfast-items">
+                   <section class="breakfast-header">
+                <i class="fa-solid fa-mug-saucer"></i>
+                <h2>Breakfast</h2>
+            </section>
+                <section class="breakfast-item">
+                    <input type="checkbox" name="oats" id="oat-meal" data-price="4.50" class="meal-option">
+                    <label for="oat-meal">Oatmeal Bowl</label>
+                    <p class="price"> £4.50</p>
+                </section>
+                <section class="breakfast-item">
+                    <input type="checkbox" name="Avocado" id="avocado-toast" data-price="5.00" class="meal-option">
+                    <label for="avocado-toast">Avocado Toast</label>
+                    <p class="price"> £5.00</p>
+                </section>
+                <section class="breakfast-item">
+                    <input type="checkbox" name="tuna-sandwich" id="tuna-sandwich" data-price="6.00" class="meal-option">
+                    <label for="tuna-sandwich">tuna-sandwich</label>
+                    <p class="price"> £6.00</p>
+
+            </section>
+
+        </section>
+        <section id="Lunch">
+        
+            <section class="lunch-items">
+                    <section class="lunch-header">
+                <i class="fa-solid fa-bowl-food"></i>
+                <h2>Lunch</h2>
+            </section>
+
+                <section class="lunch-item">
+                    <input type="checkbox" name="chicken-salad" id="chicken-salad" data-price="7.50" class="meal-option">
+                    <label for="chicken-salad">Chicken Salad</label>
+                    <p class="price"> £7.50</p>
+                </section>
+                <section class="lunch-item">
+                    <input type="checkbox" name="veggie-bowl" id="veggie-bowl" data-price="6.50" class="meal-option">
+                    <label for="veggie-bowl">Veggie Bowl</label>
+                    <p class="price"> £6.50</p>
+                </section>
+                <section class="lunch-item">
+                    <input type="checkbox" name="sushi-rolls" id="sushi-rolls" class="meal-option" data-price="8.00">
+                    <label for="sushi-rolls">Sushi Rolls</label>
+                    <p class="price"> £8.00</p>
+                </section>
+            </section>
+
+        </section>
+        <section id="Dinner">
+
+            <section class="dinner-items">
+                            <section class="dinner-header">
+                <i class="fa-solid fa-burger"></i>
+                <h2>Dinner</h2>
+            </section>
+                <section class="dinner-item">
+                    <input type="checkbox" name="steak" id="steak-dinner" data-price="15.00" class="meal-option">
+                    <label for="steak-dinner">Steak Dinner</label>
+                    <p class="price"> £15.00</p>
+                </section>
+                <section class="dinner-item">
+                    <input type="checkbox" name="pasta" id="pasta-dish" data-price="12.00" class="meal-option">
+                    <label for="pasta-dish">Pasta Dish</label>
+                    <p class="price"> £12.00</p>
+                </section>
+                <section class="dinner-item">
+                    <input type="checkbox" name="fish-tacos" id="fish-tacos" data-price="10.00" class="meal-option">
+                    <label for="fish-tacos">Fish Tacos</label>
+                    <p class="price"> £10.00</p>
+                </section>
+            </section>
+        </section>
+        <section id="order-summary">
+            <section class="order-summary-header">
+                <i class="fa-solid fa-list"></i>
+                <h2>Order Summary</h2>
+            </section>
+            <section class="order-item">
+                <p>Tip: </p>
+                <section class="tips">
+                    <p class="tip-option" data-tip="0">0%</p>
+                    <p class="tip-option" data-tip="5">5%</p>
+                    <p class="tip-option" data-tip="10">10%</p>
+                    <p class="tip-option" data-tip="20">20%</p>
+                </section>
+                
+            </section>
+            <section class="order-item">
+                <p>Custom Tip: </p>
+                <input type="text" name="custom-tip" id="custom-tip" placeholder="Enter tip amount only" >
+            </section>
+            <section class="order-item">
+                <p>Subtotal:</p>
+                <p id="subtotal-amount"></p>
+            </section>
+            <section class="order-item">
+                <p>Tip amount:</p>
+                <p id="tip-amount"></p>
+            </section>
+            <section class="order-item">
+                <p>Total:</p>
+                <p id="total-amount"></p>
+
+            </section>
+             <input type="submit" value="Check Out" class="place-order">
+            
+        </section>
+       
+        
+    </main>
+    <!-- <footer></footer> -->
+ <script  src="./script.js"></script>
+</body>
+</html>
